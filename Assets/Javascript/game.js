@@ -124,9 +124,11 @@ $(".row1").click(function(){
 				chooseEnemey = false;
 				console.log(defeated);
 				if (defeated ===3){
-					alert("You Win");
 					begin();
-					} }else{
+					setTimeout(function() {
+					alert("YOU WIN");
+								}, 0);
+						} }else{
 
 	//counter attack
 
