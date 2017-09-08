@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>woer</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+	
+
+</head>
+<body>
+<h2 > You:</h2>
+
+<div  class = "row container fighter">
+	<!-- create four images for row 1 -->
+	<div class = "row1 cha1 pic" id = "cha10" attack = "80">
+		<h4 class = " health health1 health10">900</h4>
+	</div>
+	<div class = "row1 cha2 pic" id = "cha11" attack = "70">
+		<h4 class = " health health2 health11">520</h4>
+	</div>
+	<div class = "row1 cha3 pic" id = "cha12" attack = "20">
+		<h4 class = " health health3 health12">500</h4>
+	</div>
+	<div class = "row1 cha4 pic" id = "cha13" attack = "100">
+		<h4 class = " health health4 health13">3000</h4>
+	</div>
+
+</div>
+
+<h2> Enemies:</h2>
+<div class = "row container enemy">
+
+	<div class = "row2 cha1 pic" id = "cha20">
+		<h4 class = "health health20">900</h4>
+	</div>
+	<div class = "row2 cha2 pic" id = "cha21">
+		<h4 class = "health health21">520</h4>
+	</div>
+	<div class = "row2 cha3 pic" id = "cha22">
+		<h4 class = "health health22">500</h4>
+	</div>
+	<div class = "row2 cha4 pic" id = "cha23">
+		<h4 class = "health health23">3000</h4>
+	</div>
+
+</div>
+
+<h2> Defender: </h2>
+<div class = "row container defeated">
+
+<div class = "contain3">
+	<div class = "row3 cha1 pic" id = "cha30" counterAttack = "80">
+		<h4 class = " health health1 health30">900</h4>
+	</div>
+	<div class = "row3 cha2 pic" id = "cha31" counterAttack = "70">
+		<h4 class = "health health2 health31">520</h4>
+	</div>
+	<div class = "row3 cha3 pic" id = "cha32" counterAttack = "20">
+		<h4 class = " health health3 health32">500</h4>
+	</div>
+	<div class = "row3 cha4 pic" id = "cha33" counterAttack = "100">
+		<h4 class = " health health4 health33">3000</h4>
+	</div>
+</div>
+</div>
+
+
+
+<div class = "attack">
+<button id = "attack">ATTACK</button>
+</div>
+
+
+<div class = "result"> </div>
+<button id = "restart">Restart</button>
+</body>
+
+
+<script type="text/javascript" src = "Assets/javascript/game.js"></script>
+</html>

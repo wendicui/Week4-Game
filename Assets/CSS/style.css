@@ -1,0 +1,62 @@
+
+.pic{
+	
+	height:200px;
+	width:200px;
+	border-radius: 100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border:solid 1px black;
+	display:inline-block;
+	text-align: center;
+	margin-right: 2%;
+	position:relative;
+}
+.health{
+	position:absolute;
+	top:100%;
+	left:40%;
+}
+
+.cha1{
+	background-image: url(../Images/1.jpg);
+}
+.cha2{
+	background-image: url(../Images/2.jpg);	
+}
+.cha3{
+	background-image: url(../Images/3.jpg);
+}
+.cha4{
+	background-image: url(../Images/4.jpg);
+}
+
+.row{
+	text-align: center;
+	height:200px;
+	margin:50px;
+}
+
+.row2{
+	display: none;
+}
+
+.row3{
+	display:none;
+}
+
+img{
+	height:auto;
+}
+
+#restart{
+	visibility: hidden;
+}
+
+/*body{
+	color:white;
+	background-image: url(bk.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}*/
