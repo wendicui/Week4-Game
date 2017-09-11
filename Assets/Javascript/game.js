@@ -56,7 +56,7 @@
 	$(".row1").click(function(){
 
 	 	if (row1Cliked === true){return}
-	 		else{
+	 	else{
 // firstline: on click,  generate a "j " 	
 		j = this.id.replace("cha1",'');
 		//console.log(j);
@@ -74,6 +74,8 @@
 			}
 		})
 		row1Cliked = true;
+		}
+	})
 //__________________________________________________________
 	
 //secondline: on click, generate a ‘q',
@@ -141,12 +143,11 @@
 				}
 				$(".health1" + j).html(healthAfterPlayer);
 
+				}
 			}
-			}
-			})
+		})
 
-   		 }
-	})
+   	
 
 
 
