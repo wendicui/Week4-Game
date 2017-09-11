@@ -1,8 +1,3 @@
-	
-
-	
-
-	 // var charac = [ 'cha1', 'cha2', 'cha3', 'cha4'];
 
 	 var number = ["0", "1", "2", "3"]
 	 var row2Cliked = false;
@@ -34,7 +29,7 @@
 		 $(".cha4").attr("attack","100");
 
 
-}
+	}
 //1.create four images for all three lines, each have indiv class: characi
 
 
@@ -46,7 +41,7 @@
 
 		
 	}
-	// hide("3","1")
+// hide("3","1")
 
 	function show(row,i){
 
@@ -54,26 +49,21 @@
 		
 	}
 
-	 //show("3","1")
-
-	 //restart
-
+//show("3","1")
+//restart
 
 
-
-
-
-$(".row1").click(function(){
+	$(".row1").click(function(){
 
 	 	if (row1Cliked === true){return}
 	 		else{
-	// firstline: on click,  generate a "j " 	
+// firstline: on click,  generate a "j " 	
 		j = this.id.replace("cha1",'');
 		//console.log(j);
-	//the second line turn show: 
+//the second line turn show: 
 		$(".row2").css("display", "inline-block");
 		hide("2", j);
-	//the rest turn hidden
+//the rest turn hidden
 
 		$.each(number, function(index, value){
 
@@ -86,7 +76,7 @@ $(".row1").click(function(){
 		row1Cliked = true;
 //__________________________________________________________
 	
-	//secondline: on click, generate a ‘q',
+//secondline: on click, generate a ‘q',
 
 	$(".row2").click(function(){
 		if(row2Cliked === true){return}
@@ -100,38 +90,39 @@ $(".row1").click(function(){
 		chooseEnemey = true;
 		}
 	})
-		//--------------------------------------------------
+//--------------------------------------------------
 //attack, array: counting times. 
-			$("#attack").click(function(){
+	$("#attack").click(function(){
 				
-				if(chooseEnemey ===false){return}
-					else{
+			if(chooseEnemey ===false){return}
+			else{
 
 				var currentHealth = $(".health3" + i).text();
-				//console.log(currentHealth);
+//console.log(currentHealth);
 				var attack = $("#cha1" + j).attr("attack");
-				//console.log(attack);
+//console.log(attack);
 				var healthAfter = currentHealth - attack;
-				//console.log(i);
-				//console.log(healthAfter);
+//console.log(i);
+//console.log(healthAfter);
 				$(".health3" + i).html(healthAfter);
 
 				$("#cha1" + j).attr("attack", attack *2) ;
-				//console.log($("#cha1" + j).attr("attack"))
-				if(healthAfter < 0){ hide("3", i)
-				defeated += 1;
-				row2Cliked = false;
-				chooseEnemey = false;
-				console.log(defeated);
-				if (defeated ===3){
-					begin();
-					setTimeout(function() {
-					alert("YOU WIN");
-								}, 0);
-						} }else{
-
-	//counter attack
-
+//console.log($("#cha1" + j).attr("attack"))
+				
+				if(healthAfter < 0){ 
+					hide("3", i)
+					defeated += 1;
+					row2Cliked = false;
+					chooseEnemey = false;
+//console.log(defeated);
+					if (defeated ===3){
+						begin();
+						setTimeout(function() {
+							alert("YOU WIN");
+						}, 0);
+						} 
+				}else{
+//counter attack
 				var currentHealthPlayer = $(".health1" + j).text();
 				var counterAttack = $("#cha3" + i).attr("counterAttack");
 				var healthAfterPlayer = currentHealthPlayer - counterAttack;
@@ -154,17 +145,7 @@ $(".row1").click(function(){
 			}
 			})
 
-
-
-
-		
-
-
-
-
-
-
-    }
+   		 }
 	})
 
 
